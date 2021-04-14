@@ -1,0 +1,254 @@
+body {
+  background-color: black;
+  font-family: "Lato", sans-serif;
+}
+
+/* Cabecera */
+
+.inicio {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-size: 250%;
+}
+
+.flecha,
+.flecha:before {
+  position: absolute;
+  left: 50%;
+}
+
+.flecha {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0px 0 500px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.flecha:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: flecha;
+}
+
+@keyframes flecha {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(10px, 10px);
+  }
+}
+
+/* Cajas */
+
+.proyectos {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+.cajas {
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.box1 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  background: #1d1d1d;
+}
+
+.box1 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box1:hover {
+  background-color: #787CB5;
+}
+
+.box2 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  position: relative;
+  background: #1d1d1d;
+}
+
+.box2 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box2:hover {
+  background-color: #E44D26
+}
+
+.box3 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  position: relative;
+  background: #1d1d1d;
+}
+
+.box3 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box3:hover {
+  background-color: #00758F
+}
+
+.box4 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  position: relative;
+  background: #1d1d1d;
+}
+
+.box4 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box4:hover {
+  background-color: #F0DB4F;
+  color:black;
+}
+
+.box5 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  position: relative;
+  background: #1d1d1d;
+}
+
+.box5 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box5:hover {
+  background-color: #ED1D25;
+}
+
+.box6 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 50%;
+  width: 25%;
+  margin: 1rem;
+  position: relative;
+  background: #1d1d1d;
+}
+
+.box6 i {
+  color: white;
+  font-size: 350%;
+  margin-top: 35%;
+}
+
+.box6:hover {
+  background-color: #00BCF2;
+}
+
+/* HABILIDADES */
+
+.hab{
+  height: 50%;
+  width: 100%;
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+/* REDES SOCIALES */
+
+.rs {
+
+}
+
+.git {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.git i{
+  color: white;
+  font-size: 350%;
+}
+
+.git i:hover{
+  color: #333333;
+}
+
+.behance {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.behance i{
+  color: white;
+  font-size: 350%;
+}
+
+.behance i:hover{
+  color: #0080ff;
+}
+
+.dribble {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.dribble i{
+  color: white;
+  font-size: 350%;
+}
+
+.dribble i:hover{
+  color: #E94C88;
+}
