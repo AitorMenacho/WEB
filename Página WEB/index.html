@@ -3,31 +3,32 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AitorMenacho - Inicio</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
 </head>
 
 <body>
     <div class="inicio">
         <h1>Aitor Menacho Vega.</h1>
-        <div class="cajas">
+        <div class="flecha"></div>
+        <div class="rs">
             <div class="git">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/AitorMenacho" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="behance">
-                <a href="#"><i class="fab fa-behance-square"></i></a>
+                <a href="https://www.behance.net/aitormenacho" target="_blank"><i class="fab fa-behance-square"></i></a>
             </div>
             <div class="dribble">
-                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="https://dribbble.com/menachoaitor" target="_blank"><i class="fab fa-dribbble"></i></a>
             </div>
         </div>
-        <div class="flecha"></div>
     </div>
 
     <div class="proyectos">
@@ -55,40 +56,56 @@
         </div>
     </div>
 
-    <div class="hab">
+    <div class="habilidades">
         <h2>HABILIDADES</h2>
-        <div class="habilidad" data-percent="20">
-            HTML
-        </div>
-        <div class="habilidad" data-percent="20">
-            CSS
-        </div>
-        <div class="habilidad" data-percent="90">
-            JS
-        </div>
-        <div class="habilidad" data-percent="70">
-            PHP
-        </div>
-        <div class="habilidad" data-percent="30">
-            WP
+        <div class="wrapper">
+            <div class="card">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">HTML & CSS</div>
+            </div>
+            <div class="card js">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">JavaScript</div>
+            </div>
+            <div class="card php">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">PHP</div>
+            </div>
+            <div class="card sql">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">SQL</div>
+            </div>
+            <div class="card wordpress">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">WordPress</div>
+            </div>
+            <div class="card wix">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">WIX</div>
+            </div>
         </div>
     </div>
 
-    <div class="rrss">
-        <h2>REDES SOCIALES</h2>
-        <div class="cajas">
-            <div class="git">
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="behance">
-                <a href="#"><i class="fab fa-behance-square"></i></a>
-            </div>
-            <div class="dribble">
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-            </div>
-        </div>
 
-    </div>
+    <script src="./index.js"></script>
 
 </body>
 

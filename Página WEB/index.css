@@ -197,18 +197,104 @@ body {
 
 /* HABILIDADES */
 
-.hab{
-  height: 50%;
+.habilidades {
+  height: 100%;
   width: 100%;
   color: white;
   font-size: 150%;
   text-align: center;
 }
 
+.wrapper{
+  width: 64%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 18%;
+}
+.wrapper .card{
+  background: #1d1d1d;
+  width: calc(33% - 20px);
+  height: 300px;
+  border-radius: 5px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #1d1d1d;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+
+
 /* REDES SOCIALES */
 
 .rs {
-
+  position: absolute;
+  margin-top: 10%;
+  margin-right: 30%;
 }
 
 .git {
@@ -218,7 +304,7 @@ body {
 
 .git i{
   color: white;
-  font-size: 350%;
+  font-size: 100%;
 }
 
 .git i:hover{
@@ -232,7 +318,7 @@ body {
 
 .behance i{
   color: white;
-  font-size: 350%;
+  font-size: 100%;
 }
 
 .behance i:hover{
@@ -246,7 +332,7 @@ body {
 
 .dribble i{
   color: white;
-  font-size: 350%;
+  font-size: 100%;
 }
 
 .dribble i:hover{
