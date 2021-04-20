@@ -18,3 +18,7 @@ input {
     background-color: transparent;
     padding: 12 80;
 }
+
+label{
+    color: white;
+}
