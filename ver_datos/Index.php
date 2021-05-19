@@ -2,6 +2,7 @@
 
 <head>
   <title>Datos</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,9 @@
     die("Problemas en el select:" . mysqli_error($conexion));
 
   while ($reg = mysqli_fetch_array($registros)) {
-    echo "Codigo: " . $reg['ID_CLIENTES'] . "<br>";
+    echo "<div class='caja'>";
+    echo "<fieldset>";
+    echo "<h3>"."Codigo: "."</h3>". $reg['ID_CLIENTES'] . "<br>";
     echo "Nombre: " . $reg['NOMBRE'] . "<br>";
     echo "Apellidos: " . $reg['APELLIDO_1']. " " . $reg['APELLIDO_2'] ."<br>";
     echo "Sexo: " . $reg['SEXO'] . "<br>";
@@ -27,8 +30,8 @@
     echo "Provincia: " . $reg['PROVINCIA'] . "<br>";
     echo "Contraseña: " . $reg['CONTRASEÑA'] . "<br>";
     echo "DNI: " . $reg['DNI'] . "<br>";
-    echo "<br>";
-    echo "<hr>";
+    echo "<fieldset>";
+    echo "</div>";
   }
 
   mysqli_close($conexion);

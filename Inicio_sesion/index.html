@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../css/Index.css">
+</head>
+
+<body>
+    <!--Formulario-->
+    <form class="caja" method="POST" action="./php/alta.php" onsubmit="return validarclave()">
+        <!--pasos-->
+        <div class="fondo">
+            <fieldset>
+                <!--Primer paso-->
+                <h2 class="titulo">Inicio de sesión</h2>
+                <input type="email" name="CORREO" placeholder="Correo Electrónico">
+                <input type="password" name="CONTRASEÑA" placeholder="Contraseña">
+                <input type="button" class="action-button" value="Iniciar">
+            </fieldset>
+            <br>
+            <a href="../Modificar_un_usuario/Index.php">Cambiar contraseña</a>
+            <a href="../Borrado_de_usuario/index.php">Borrar usuario</a>
+            <a href="../Index.html">Registrarme</a>
+</body>

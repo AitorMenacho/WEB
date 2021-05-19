@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/Index.css">
+</head>
+
+<body>
+        <!--Formulario-->
+        <form class="caja" method="POST" action="./php/alta.php" onsubmit="return validarclave()">
+            <!--pasos-->
+            <div class="fondo">
+                <fieldset>
+                    <!--Primer paso-->
+                    <h2 class="titulo">Registro</h2>
+                    <h3 class="subtitulo">Datos Personales</h3>
+                    <input type="text" name="NOMBRE" placeholder="Nombre" pattern="[a-zA-Z]">
+                    <input type="text" name="APELLIDO_1" placeholder="Primer Apellido">
+                    <input type="text" name="APELLIDO_2" placeholder="Segundo Apellido">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="hombre" value="hombre" name="SEXO">
+                    <br>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="mujer" value="mujer" name="SEXO">
+                    <br>
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="otro" value="otro" name="SEXO">
+                    <input type="email" name="CORREO" placeholder="Correo Electrónico">
+                    <input type="tel" name="TELEFONO" placeholder="Teléfono" pattern="[0-9]{9}" maxlength="9">
+                    <input type="date" name="FECHA_NACIMIENTO">
+                    <input type="text" name="DNI" placeholder="DNI">
+                    <input type="button" name="next" class="next action-button" value="siguiente">
+                </fieldset>
+
+                <fieldset>
+                    <!--Segundo paso-->
+                    <h2 class="titulo">Registro</h2>
+                    <h3 class="subtitulo">Dirección</h3>
+                    <input type="text" name="DIRECCION" placeholder="Dirección">
+                    <input type="text" name="POBLACION" placeholder="Población">
+                    <input type="text" name="PROVINCIA" placeholder="Provincia">
+                    <input type="button" name="previo" class="previo action-button" value="anterior">
+                    <input type="button" name="next" class="next action-button" value="siguiente">
+                </fieldset>
+
+                <fieldset>
+                    <!--Tercer paso-->
+                    <h2 class="titulo">Registro</h2>
+                    <h3 class="subtitulo">Contraseña</h3>
+                    <input type="password" id="pass1" name="CONTRASEÑA" placeholder="Contraseña">
+                    <input type="password" id="pass2" name="CONTRASEÑA2" placeholder="Confirmar contraseña">
+                    <input type="button" name="previo" class="previo action-button" value="anterior">
+                    <button type="submit" class="btn action-button">Registrar</button>
+                </fieldset>
+            </div>
+        </form>
+
+
+    <!--JS-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="./js/comprobacion.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

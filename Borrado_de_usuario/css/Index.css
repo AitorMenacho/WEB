@@ -1,0 +1,117 @@
+/* Cuerpo */
+
+* {margin: 0; padding: 0;}
+
+html {
+	background-color: #2F4858;
+}
+
+/* Formas */
+
+.caja {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+
+/* Fondo de caja */
+
+.caja fieldset {
+	width: 80%;
+	box-sizing: border-box;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	border: 0 none;
+	padding: 20px 30px;
+	margin: 0 10%;
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+
+
+}
+
+.caja fieldset:before{
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.caja fieldset:not(:first-of-type) {
+	display: none;
+}
+
+/* Cabecera de la caja */
+
+.titulo {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #E1F2FE;
+	margin-bottom: 10px;
+}
+.subtitulo {
+	font-weight: normal;
+	font-size: 13px;
+	color: #E1F2FE;
+	margin-bottom: 20px;
+}
+
+/* rellenables */
+
+.caja input {
+	background-color: transparent;
+	padding: 15px;
+	border: 1px solid #98D2EB;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #E1F2FE;
+	font-size: 13px;
+}
+
+.caja input::placeholder {
+	color: #E1F2FE;
+}
+
+.caja input:hover, .caja input:focus {
+	border-radius: 10px;
+	outline: none;
+}
+
+label {
+	color: #E1F2FE;
+}
+
+/* Botón */
+
+.caja .action-button {
+	width: 100px;
+	background: transparent;
+	font-weight: bold;
+	color: #E1F2FE;
+	border: 2px solid #98D2EB;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+.caja .action-button:hover, .caja .action-button:focus {
+	border-radius: 10px;
+}
+
+/* Salida */
+.salida {
+	color: #E1F2FE;
+	font-size: 13px;
+}

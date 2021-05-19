@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Registro</title>
+        <link rel="stylesheet" href="../css/Index.css" >
     </head>
 
     <body>
@@ -25,7 +26,7 @@
     
       mysqli_close($conexion);
     
-      echo "El alumno fue dado de alta.";
+      echo "<div class='caja'>"."<fieldset>"."<div class='salida'>"."El alumno ha sido dado de alta."."</div>"."</fieldset>"."</div>";
         ?>
     </body>
 </html>
