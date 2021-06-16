@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.css"> 
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style2.css">
         <title>Modificación de datos</title>
 
     </head>
@@ -14,10 +14,10 @@
         <div class="m-0 vh-100 row justify-content-center align-items-center">
             <div class="col-auto p-5 text-center">
                 <!-- Formulario -->
-                <h1>Modificar contraseña</h1>
+                <h1>Modificar Cliente</h1>
                 <form method="POST" action="buscador.php" class="needs-validation">
                     <div class="input-group mb-3">
-                        <input type="email" name="CORREO" class="form-control" placeholder="Correo electrónico" required>
+                        <input type="number" name="IdCliente" class="form-control" placeholder="Id del cliente que quieres modificar" required>
                     </div>
                     <button type="submit" class="btn action-button" >Modificar</button>
                 </form>
