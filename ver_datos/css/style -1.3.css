@@ -1,0 +1,41 @@
+
+/* Color:
+
+#F3FFC6 Letras
+#1C5253  fondo
+
+*/
+
+
+/* Cuerpo */
+
+body {
+    background-color: #1C5253;
+    color: #F3FFC6;
+}
+
+/* Cajas */
+
+.caja {
+    border: solid 0.1rem #F3FFC6;
+    padding: 2% 2% 2% 2%;
+}
+
+/* Enlace */
+
+a {
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #E74C3C;
+    text-decoration: none;
+    border: 2% solid #E74C3C;
+}
+
+a:hover {
+    color: #E74C3C;
+    text-decoration: none;
+    border: 0.1rem solid #E74C3C;
+}

@@ -1,0 +1,89 @@
+/* Color:
+
+#F3FFC6 Letras
+#1C5253  fondo
+
+*/
+
+
+/* Cuerpo */
+
+body {
+    background-color: #1C5253;
+    color: #F3FFC6;
+}
+
+/* Formulario */
+
+.form-control {
+    background-color: transparent;
+    color: #F3FFC6;
+    border-color: #F3FFC6;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #1C5253;
+    color: #F3FFC6;
+}
+
+/* Inputs */
+
+.form-control::placeholder {
+    color: #F3FFC6;
+}
+
+.input-group-text {
+    color: #F3FFC6;
+    background-color: #1C5253;
+}
+
+input[type="radio"] {
+    background-color: #F3FFC6;
+}
+
+input[type="radio"]:hover {
+    background-color: #1C5253;
+}
+
+input:invalid {
+    border: red 2px solid;
+}
+
+/* Botón */
+
+.btn {
+    color: #F3FFC6;
+    border-color: #F3FFC6;
+    background-color: transparent;
+}
+
+.btn:focus {
+    color: #1C5253;
+    background-color: #F3FFC6;
+}
+
+.btn:hover {
+    color: #1C5253;
+    background-color: #F3FFC6;
+}
+
+/* Eliminar flechas del tipo número */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Salida */
+
+.caja {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 130%;
+}
+
+fieldset {
+    border: none;
+}
